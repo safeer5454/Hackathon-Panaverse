@@ -1,11 +1,10 @@
 "use client";
-import { MenuIcon, ShoppingCartIcon, Search } from "lucide-react";
+import { MenuIcon, Search, ShoppingCartIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { Input } from "../Input";
-import Image from "next/image";
 import logo from "../../../public/Logo.png";
-import female from "@/app/female/page";
+import { Input } from "../Input";
 type HeaderProps = {};
 
 const Header: React.FC<HeaderProps> = () => {
