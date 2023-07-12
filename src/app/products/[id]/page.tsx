@@ -24,8 +24,9 @@ const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ params }) => {
           <div className="flex flex-row gap-6">
             <div className="flex flex-col gap-3">
               {/* image lists */}
-              {productDetail?.extraImages?.map((img) => (
+              {productDetail?.extraImages?.map((img, i) => (
                 <Image
+                  key={i}
                   onMouseOver={() => setSelectedImage(img)}
                   // className={`hover:${setImage(second)}`}
                   src={img}
