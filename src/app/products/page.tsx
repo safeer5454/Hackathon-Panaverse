@@ -9,7 +9,7 @@ const Products = (props: Props) => {
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-11 my-14">
       {products.map((product, i) => (
-        <Link href={`/female/${product.id}`} key={i}>
+        <Link href={`/products/${product.id}`} key={i}>
           <ProductCard
             key={i}
             image={product.image}
