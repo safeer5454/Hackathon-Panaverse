@@ -39,22 +39,39 @@ const Header: React.FC<HeaderProps> = () => {
       <div
         className={` lg:flex-1  items-center  pl-24 lg:justify-between ${
           navbar
-            ? "flex lg:flex-row flex-1  flex-col justify-center   space-y-3"
+            ? "flex lg:flex-row flex-1  pl-0 flex-col justify-center   space-y-3"
             : "hidden lg:flex"
         } `}
       >
         <ul className=" lg:flex lg:space-x-10 lg:items-center space-y-2 lg:space-y-0 text-base">
           <li>
-            <Link href={`/category/${"female"}`}>Female</Link>
+            <Link
+              href={`/category/${"female"}`}
+              onClick={() => setNavBar(!navbar)}
+            >
+              Female
+            </Link>
           </li>
           <li>
-            <Link href={`/category/${"male"}`}>Male</Link>
+            <Link
+              href={`/category/${"male"}`}
+              onClick={() => setNavBar(!navbar)}
+            >
+              Male
+            </Link>
           </li>
           <li>
-            <Link href={`/category/${"kids"}`}>Kids</Link>
+            <Link
+              href={`/category/${"kids"}`}
+              onClick={() => setNavBar(!navbar)}
+            >
+              Kids
+            </Link>
           </li>
           <li>
-            <Link href={`/products`}>All Products</Link>
+            <Link href={`/products`} onClick={() => setNavBar(!navbar)}>
+              All Products
+            </Link>
           </li>
         </ul>
         <div className="hidden h-7 lg:flex px-1 lg:items-center border-[1px] w-1/3 rounded border-[#e4e5eb]">

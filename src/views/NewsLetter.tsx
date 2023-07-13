@@ -17,7 +17,7 @@ const NewsLetter: React.FC<NewsLetterProps> = () => {
         <p className=" tracking-tighter text-base font-light text-[#212121] mb-8">
           Get the latest information and promo offers directly
         </p>
-        <form className="flex gap-3  p-4 w-full ">
+        <form className="flex flex-col md:flex-row gap-3  p-4 w-full ">
           <Input placeholder="Input Email Address" />
           <Button className="bg-black lg:w-1/3   text-white  text-sm font-semibold">
             Get Started
