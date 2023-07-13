@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = () => {
       </div>
       {/* </div> */}
       <div
-        className={` lg:flex-1  items-center  pl-24 lg:justify-between ${
+        className={` lg:flex-1  items-center pl-0 lg:pl-24 lg:justify-between ${
           navbar
             ? "flex lg:flex-row flex-1  pl-2 flex-col justify-center   space-y-3"
             : "hidden lg:flex "
