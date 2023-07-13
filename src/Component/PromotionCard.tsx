@@ -17,7 +17,9 @@ const PromotionCard: React.FC<PromotionCardProps> = ({
   image,
 }) => {
   return (
-    <div className={`bg-[${backgroundColor}] pt-4`}>
+    <div
+      className={`bg-[${backgroundColor}]  flex flex-col justify-between pt-4`}
+    >
       <div className="ml-4">
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-black text-base font-normal ">
           {title}

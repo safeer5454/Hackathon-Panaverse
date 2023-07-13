@@ -15,6 +15,7 @@ import eleven from "../../public/eleven.png";
 import header from "../../public/header.png";
 import s2 from "../../public/s2.png";
 import s3 from "../../public/s3.png";
+import { ProductDetail } from "@/types";
 
 export const promotionProduct = [
   {
@@ -22,7 +23,6 @@ export const promotionProduct = [
     oldPrice: 100.0,
     newPrice: 75.0,
     backgroundColor: "#EFE1C7",
-
     image: Event2,
   },
   {
@@ -34,7 +34,7 @@ export const promotionProduct = [
   },
 ];
 
-export const products = [
+export const products: ProductDetail[] = [
   {
     id: 1,
     name: "Brushed Raglan Sweatshirt",

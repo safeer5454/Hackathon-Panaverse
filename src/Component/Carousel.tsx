@@ -5,11 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
   const settings = {
-    // dots: true, // Add dots navigation
-    infinite: true, // Allow infinite scrolling
-    speed: 500, // Animation speed in milliseconds
-    slidesToShow: 1, // Number of slides to show at a time
-    slidesToScroll: 1, // Number of slides to scroll at a time
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (

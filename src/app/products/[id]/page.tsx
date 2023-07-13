@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/Component/ui/button";
 import { products, sizes } from "@/constants";
+import { ProductDetail } from "@/types";
 import { ShoppingCartIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
@@ -11,7 +12,9 @@ type ProductDetailPageProps = {
 };
 
 const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ params }) => {
-  const productDetail = products.find((product) => product.id === +params.id);
+  const productDetail: ProductDetail = products.find(
+    (product) => product.id === +params.id
+  ) as ProductDetail;
   const [selectedImage, setSelectedImage] = React.useState<StaticImageData>(
     productDetail?.image!
   );
@@ -28,7 +31,6 @@ const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ params }) => {
                 <Image
                   key={i}
                   onMouseOver={() => setSelectedImage(img)}
-                  // className={`hover:${setImage(second)}`}
                   src={img}
                   height={100}
                   width={100}

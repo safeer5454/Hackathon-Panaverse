@@ -13,7 +13,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, price, image }) => {
       <Image src={image} alt="product" width={380} height={400} />
       <div className="flex flex-col justify-center items-center pt-2">
         <h2 className=" text-lg font-semibold ">{name}</h2>
-        <span className="text-lg font-semibold ml-2 ">${price}</span>
+        <span className="text-lg font-semibold ml-2">${price}</span>
       </div>
     </div>
   );

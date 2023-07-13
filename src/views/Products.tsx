@@ -43,7 +43,7 @@ const Products: React.FC<ProductsProps> = () => {
 
   return (
     <section>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center pt-24">
         <p className="text-[#0062f5] font-bold text-xs tracking-wider">
           PRODUCTS
         </p>

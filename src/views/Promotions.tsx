@@ -9,17 +9,17 @@ type PromotionsProps = {};
 
 const Promotions: React.FC<PromotionsProps> = () => {
   return (
-    <section className="py-16">
-      <div className="flex flex-col  items-center justify-center">
-        <p className="text-[#0062f5] font-bold text-xs tracking-wider">
+    <section className="">
+      <div className="flex flex-col ">
+        <p className="text-[#0062f5] text-center font-bold text-xs tracking-wider">
           PROMOTIONS
         </p>
-        <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
+        <h2 className="scroll-m-20 pb-2 text-center text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
           Our Promotions Events
         </h2>
         <div className="flex flex-col lg:flex-row gap-6 pt-4">
           {/* left div */}
-          <div className="flex flex-col gap-3  justify-between flex-1">
+          <div className="flex flex-col gap-3  flex-1">
             <div className="bg-[#D6D6D8] flex flex-col sm:flex-row bg items-center px-3">
               <div className="flex flex-col   p-4">
                 <h3 className="scroll-m-20 text-3xl font-bold tracking-tight">

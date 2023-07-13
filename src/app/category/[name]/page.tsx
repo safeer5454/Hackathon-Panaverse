@@ -1,5 +1,6 @@
 import ProductCard from "@/Component/Product";
 import { products } from "@/constants";
+import { ProductDetail } from "@/types";
 import Link from "next/link";
 import React from "react";
 
@@ -15,7 +16,7 @@ const category: React.FC<categoryTypes> = ({ params }) => {
   );
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-11 my-14">
-      {categoryProduct.map((product, i) => (
+      {categoryProduct.map((product: ProductDetail, i) => (
         <Link href={`/products/${product.id}`} key={i}>
           <ProductCard
             image={product.image}
