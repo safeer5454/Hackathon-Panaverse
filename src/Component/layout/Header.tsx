@@ -39,8 +39,8 @@ const Header: React.FC<HeaderProps> = () => {
       <div
         className={` lg:flex-1  items-center  pl-24 lg:justify-between ${
           navbar
-            ? "flex lg:flex-row flex-1  pl-0 flex-col justify-center   space-y-3"
-            : "hidden lg:flex"
+            ? "flex lg:flex-row flex-1  pl-2 flex-col justify-center   space-y-3"
+            : "hidden lg:flex "
         } `}
       >
         <ul className=" lg:flex lg:space-x-10 lg:items-center space-y-2 lg:space-y-0 text-base">
